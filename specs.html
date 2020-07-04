@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head> 
+	<meta charset="UTF-8"/>
+	<title>Tudo sobre o Google Glass</title>
+	<link rel="stylesheet" href="_css/estilo.css"/>
+	<link rel="stylesheet" href="_css/specs.css"/>
+
+	<style>
+		@import url('https://fonts.googleapis.com/css?family=Titillium+Web&display=swap');
+	</style>	
+</head>
+
+<script type="text/javascript" src="_javascript/funcoes.js"></script>
+
+<body>
+	<div id="interface">
+		<header id="cabecalho">
+			<hgroup>
+				<h1>Google GLASS</h1>
+				<h2>A revolução do Google está chegando</h2>
+			</hgroup>
+
+			<img id="icone" src="_imagens/especificacoes.png"/>
+
+			<nav id="menu">
+				<h1>Menu Principal</h1>
+				<ul onmouseout="mudarFoto('especificacoes.png')">
+					<li onmouseover="mudarFoto('home.png')"> <a href="index.html">Home</a> </li>
+					<li onmouseover="mudarFoto('especificacoes.png')"> <a href="specs.html">Especificações</a> </li>
+					<li onmouseover="mudarFoto('fotos.png')"> <a href="fotos.html">Fotos</a> </li>
+					<li onmouseover="mudarFoto('multimidia.png')"> <a href="multimidia.html">Multimídia</a> </li>
+					<li onmouseover="mudarFoto('contato.png')"> <a href="fale-conosco.html">Fale conosco</a> </li>
+				</ul>
+			</nav>
+		</header>
+
+
+		<section id="corpo-full">
+			<article id="noticia-principal">
+				<header id="cabecalho-artigo">
+					<hgroup>
+						<h3>Glass > Especificações</h3>
+						<h1>Raio-X no Google Glass</h1>						
+						<h3 class="direita">Atualizado em 30/06/2019</h3>
+					</hgroup>
+				</header>
+
+				<p>Clique em qualquer área destacada da imagem para ter mais informações sobre os recursos do Google Glass. Qualquer ponto vermelho vai te levar a um lugar cheio de novas informações.</p>
+
+
+				<section id="conteudo">
+					<img src="_imagens/glass-esquema-marcado.jpg" usemap="#meumapa"/>
+					
+					<map name="meumapa">
+						<area shape="circle" coords="76,51,11" href="google-glass.html#gadgets" target="janela" />
+						<area shape="poly" coords="27,144,81,217,83,250,26,168" href="google-glass.html#sensores" target="janela" />
+						<area shape="circle" coords="157,244,11" href="google-glass.html#camera" target="janela" />
+						<area shape="poly" coords="264,208,267,243,185,256,182,219" href="google-glass.html#tela" target="janela" />
+					</map>
+
+					<iframe src="google-glass.html" name="janela" id="frame-spec"></iframe>
+				</section>
+			</article>
+		</section>
+
+		<footer id="rodape">
+			<p>&copy; 2019 - by Raí Vargas</p>
+		</footer>
+	</div>
+</body>
+</html>
